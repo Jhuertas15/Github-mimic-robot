@@ -1,4 +1,6 @@
 Our robot is based on several real-life and fictional car models, and the model that you can see in the second version of the v-photos folder was decided from them.
+The mechanism is based on electric cars like the Tesla which uses electric motors to get instant acceleration, the cars has no gears so it means it has no torque but the speed of the robot is decided specifically to be fast but at the same time precise.
+The design we tried for our robot was the Octane from a the popular game Rocket League, but in the building process, the size of the car was too big for the format and we had to scrap the idea. The design now is not based on anything but its made to be functional for the competition.
 
 Now we are going to talk about our robot.
 
@@ -28,7 +30,7 @@ Propulsion Motor: This motor is responsible for moving the robot forward and bac
 Steering Motor: This motor controls the robot's turning. By adjusting its position, the robot can change direction, allowing it to move left or right. The combination of propulsion and steering motors gives the robot the ability to perform complex and precise maneuvers.
 
 Programming and Functionality
-The LEGO Spike Prime robot's programming is designed to integrate readings from the distance and color sensors, enabling it to make autonomous decisions about its movement. Here is how a program for this robot might be structured.
+The LEGO Spike Prime robot's programming is designed to integrate readings from the distance and color sensors, enabling it to make autonomous decisions about its movement. Here is how a program for this robot is structured.
 
 1. Initialization
 At the start of the program, the robot performs an initial calibration of its sensors to ensure accurate readings. This includes setting the initial position of the motors and configuring the parameters of the distance and color sensors.
@@ -39,16 +41,18 @@ The robot enters a continuous loop where it reads the values from the three dist
 3. Obstacle Detection
 Using the values from the distance sensors, the robot determines if there are any nearby obstacles in its path or on its sides. For example:
 The side distance sensors are used to detect if the spaces to the sides are clear for a safe turn.
+The front sensor is used to detect how far the wall is from the robot and when is the right time to turn.
 
-4. Color Interpretation
+5. Color Interpretation
 The color sensor allows the robot to interpret signals in its environment. For example, if the robot detects a red or green object in the front, it might interpret this as a signal to turn right or left.
 
-5. Decision Making
+6. Decision Making
 Based on the readings from the distance and color sensors, the robot decides on the action to take. A simple algorithm might be:
 
 If the front distance sensor detects a nearby obstacle, check the side sensors.
 If the right side is clear, turn right.
 If the left side is clear, turn left.
 If a specific color is detected in the front, execute the associated action (e.g., turn or stop).
+
 6. Movement
 The decisions made are translated into commands for the motors. If the robot decides to move forward, the propulsion motor is activated to move the robot forward. If it needs to turn, the steering motor adjusts the robot's orientation in the desired direction.
