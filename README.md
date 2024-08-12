@@ -1,22 +1,22 @@
 Our robot is based on several real-life and fictional car models, and the model that you can see in the second version of the v-photos folder was decided from them.
 
-Now we are gone tell about our robot.
+Now we are going to talk about our robot.
 
 Robot Components
 1. Brain
 The brain of the robot is the central processing unit (CPU) that acts as the main controller. In the LEGO Spike Prime system, this brain is known as the Hub.
 
-The Hub features an integrated screen to display information and feedback, multiple input/output ports to connect sensors and motors, and Bluetooth and USB connectivity for program loading and communication with other devices.
+The Hub features an integrated screen to display information and feedback, multiple input/output ports to connect sensors and motors, and Bluetooth and USB connectivity for program loading and communication with other devices, it is also integrated with a gyroscope to keep the robot calibrated at all times.
 
 2. Distance Sensors
 This robot is equipped with three distance sensors. These sensors use ultrasonic technology to measure the distance between the robot and objects in the track. Distance sensors are critical for autonomous navigation as they allow the robot to detect obstacles and calculate distances to avoid collisions.
 
 Front Distance Sensor: This sensor is mounted on the front of the robot and is primarily used to detect obstacles directly in the robot's path.
 
-Side Distance Sensors: Mounted on both sides of the robot, these sensors enable the detection of side obstacles and assist in making decisions regarding lateral movements or turns.
+Side Distance Sensors: Mounted on both sides of the robot, these sensors enable the detection of side obstacles and keep the robot aligned to the track, they also assist in making decisions regarding lateral movements or turns.
 
 3. Color Sensor
-The robot's color sensor is a versatile tool that can detect different colors. This sensor is placed on the front of the robot, is used to detect the color of the objects.
+The robot's color sensor is a versatile tool that can detect different colors. This sensor is placed on the front of the robot, and it   is used to detect the color of the various obstacles in the track.
 
 The color sensor can identify various colors and also measure the intensity of reflected light. This allows the robot to interpret different color signals as action commands, which is essential for navigation.
 
