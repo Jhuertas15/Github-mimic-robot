@@ -56,3 +56,9 @@ If a specific color is detected in the front, execute the associated action (e.g
 
 6. Movement
 The decisions made are translated into commands for the motors. If the robot decides to move forward, the propulsion motor is activated to move the robot forward. If it needs to turn, the steering motor adjusts the robot's orientation in the desired direction.
+
+Fails and how we fixed them
+
+The robot used to turn way more than it should and then we found out that it was because of the failed calibration, to fix it, instead of using programed calibration, we resorted to using a manual calibration method which was to turn the motor by ourselves.
+In the same topic of turning, if the ronot turned at the right angle, it would turn way to late, we figured that it was the front sensors fault so we completely scrapped the front sensor and it is now used for detecting the colored blocks.
+The robot also did not drive straight, it went from side to side, to fix it, we reduced the radius of the side sensors from 45 cm to 35 cm, after that, the robot drived straight instead of wobbling from side to side.
